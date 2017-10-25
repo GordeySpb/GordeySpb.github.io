@@ -1,0 +1,66 @@
+.best {
+  background: url("/app/img/bg-best.jpg") center center no-repeat/cover;
+  height: 100vh;
+  width: 100vw;
+  min-height: 650px;
+  position: relative; }
+
+.best-title {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 88px; }
+
+.best__text {
+  font-size: 72px;
+  font-family: 'gagalinregular';
+  font-weight: normal; }
+
+.best__produkts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.produkts__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.3%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.produkts__pic {
+  margin-bottom: 30px; }
+
+.produkts__title {
+  font-family: 'lifehack';
+  font-size: 21px;
+  margin-bottom: 20px;
+  font-weight: lighter; }
+
+.produkts__desk {
+  font-family: 'ubuntu';
+  font-weight: lighter;
+  font-size: 14px;
+  color: #2f3234;
+  text-align: center;
+  display: block; }

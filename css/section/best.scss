@@ -1,0 +1,54 @@
+.best {
+    background: url('/app/img/bg-best.jpg') center center  no-repeat/cover;
+    height: 100vh;
+    width: 100vw;
+    min-height: 650px;
+    position: relative;
+}
+
+
+.best-title {
+   padding-top: 80px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 88px;
+}
+
+.best__text {
+    font-size: 72px;
+    font-family: 'gagalinregular';
+    font-weight: normal;
+}
+
+.best__produkts {
+    display: flex;
+}
+
+.produkts__item {
+    display: flex;
+    width: 33.3%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produkts__pic {
+    margin-bottom: 30px;
+}
+
+.produkts__title {
+    font-family: 'lifehack';
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+
+}
+
+.produkts__desk {
+    font-family: 'ubuntu';
+    font-weight: lighter;
+    font-size: 14px;
+    color: #2f3234;
+    text-align: center;
+    display: block;
+}
