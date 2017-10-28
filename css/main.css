@@ -1,3 +1,5 @@
-@import url("/app/css/layout/base.css");
-@import url("/app/css/section/greeting.css");
-@import url("/app/css/section/best.css");
+@import url("../css/layout/base.css");
+@import url("../css/section/greeting.css");
+@import url("../css/section/best.css");
+@import url("../css/section/reviews.css");
+@import url("../css/section/pagination.css");

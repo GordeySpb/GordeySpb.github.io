@@ -1,14 +1,14 @@
-.best {
-    background: url('/app/img/bg-best.jpg') center center  no-repeat/cover;
-    height: 100vh;
-    width: 100vw;
-    min-height: 650px;
+.section-best {
     position: relative;
+    align-items: center;
+    text-align: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 .best-title {
-   padding-top: 80px;
    display: flex;
    justify-content: center;
    margin-bottom: 88px;
@@ -26,19 +26,21 @@
 
 .produkts__item {
     display: flex;
-    width: 33.3%;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    flex: 1;
+    line-height: 1.42;
+    font-size: 16px;
+    padding: 0 15px;
 }
 
 .produkts__pic {
-    margin-bottom: 30px;
+   
+
 }
 
 .produkts__title {
     font-family: 'lifehack';
-    font-size: 21px;
+    font-size: 24px;
     margin-bottom: 20px;
     font-weight: lighter;
 
@@ -49,6 +51,4 @@
     font-weight: lighter;
     font-size: 14px;
     color: #2f3234;
-    text-align: center;
-    display: block;
 }

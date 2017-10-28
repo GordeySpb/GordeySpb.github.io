@@ -1,0 +1,93 @@
+.reviews {
+  width: 100vw;
+  height: 100vh;
+  min-height: 650px;
+  min-width: 1100px; }
+
+.users {
+  width: 100%;
+  max-width: 100%; }
+
+.users__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%; }
+
+.users__item {
+  height: 50%;
+  width: 25%;
+  position: relative; }
+
+.users__avatar {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover; }
+
+.users__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  padding: 70px 55px 0 55px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .users__info:hover {
+    opacity: 1; }
+
+.users__name {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'gagalinregular';
+  color: #fff; }
+
+.users__text {
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+  font-family: 'ubuntu';
+  font-weight: lighter; }
+
+.users__btn {
+  display: block;
+  width: 109px;
+  height: 34px;
+  background-color: #2f3234;
+  border: 1px solid transparent;
+  border-radius: 3px; }
+  .users__btn:hover {
+    background-color: #1f2122;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    cursor: pointer; }
+
+.users__link {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase; }
