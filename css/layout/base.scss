@@ -55,14 +55,21 @@ section {
     width: 100vw;
     min-height: 650px;
     min-width: 1100px;
+    display: flex;
+}
+
+.section__title {
+    font-size: 72px;
+    font-family: 'gagalinregular';
+    font-weight: normal;
 }
 
 
 
 @font-face {
     font-family: 'ubuntu';
-    src: url('../../fonts/ubuntu-b-webfont.woff2') format('woff2'),
-         url('../../fonts/ubuntu-b-webfont.woff') format('woff');
+    src: url('/fonts/ubuntu-b-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu-b-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -73,8 +80,8 @@ section {
 
 @font-face {
     font-family: 'ubuntu';
-    src: url('../../fonts/ubuntu-light-webfont.woff2') format('woff2'),
-         url('../../fonts/ubuntu-light-webfont.woff') format('woff');
+    src: url('/fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu-light-webfont.woff') format('woff');
     font-weight: lighter;
     font-style: normal;
 
@@ -85,8 +92,8 @@ section {
 
 @font-face {
     font-family: 'ubuntu';
-    src: url('../../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
-         url('../../fonts/ubuntu-medium-webfont.woff') format('woff');
+    src: url('/fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu-medium-webfont.woff') format('woff');
     font-weight: medium;
     font-style: normal;
 
@@ -97,8 +104,8 @@ section {
 
 @font-face {
     font-family: 'ubuntu';
-    src: url('../../fonts/ubuntu-regular-webfont.woff2') format('woff2'),
-         url('../../fonts/ubuntu-regular-webfont.woff') format('woff');
+    src: url('/fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -106,8 +113,8 @@ section {
 
 @font-face {
     font-family: 'lifehack';
-    src: url('../../fonts/lifehack_medium-webfont.woff2') format('woff2'),
-         url('../../fonts/lifehack_medium-webfont.woff') format('woff');
+    src: url('/fonts/lifehack_medium-webfont.woff2') format('woff2'),
+         url('/fonts/lifehack_medium-webfont.woff') format('woff');
     font-weight: medium;
     font-style: normal;
 
@@ -115,8 +122,8 @@ section {
 
 @font-face {
     font-family: 'gagalinregular';
-    src: url('../../fonts/gagalin-regular-webfont.woff2') format('woff2'),
-         url('../../fonts/gagalin-regular-webfont.woff') format('woff');
+    src: url('/fonts/gagalin-regular-webfont.woff2') format('woff2'),
+         url('/fonts/gagalin-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
