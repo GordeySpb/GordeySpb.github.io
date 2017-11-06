@@ -1,4 +1,91 @@
 footer {
-    height: 58px;
-    margin-top: -58px;
+    margin-top: rem(-58px);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+.footer {
+    
+}
+
+.footer__row {
+    padding-top: rem(10px);
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__left {
+    font-size: rem(14px); 
+    width: 50%;
+
+    @include phones {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.footer__text {
+    color: $main;
+    display: block;
+    margin-bottom: rem(10px);
+}
+
+.footer__tell {
+    color: #e45028;
+    font-weight: bold;
+    position: relative;
+    padding-left: 20px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url('/img/phone.png');
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%,-50%);
+        display: block;
+        height: 13px;
+        width: 13px;
+        background-repeat: no-repeat;
+    }
+}
+
+.footer__right {
+    width: 50%;
+    text-align: right;
+
+    @include phones {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.socila__items {
+    display: inline-block;
+    margin-left: rem(20px);
+    padding-top: rem(18px);
+}
+
+.socila__link {
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.social__svg {
+    width: rem(23px);
+    height: rem(23px);
+    fill: #585858;
+    transition: fill .3s;
+
+    &:hover {
+        fill: $main;
+    }
 }

@@ -1,8 +1,8 @@
 .reviews {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    min-height: 650px;
-    min-width: 1100px;
+    min-height: rem(650px);
+    min-width: rem(1100px);
 }
 
 .users {
@@ -23,9 +23,14 @@
     width: 25%;
     position: relative;
     
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .users__avatar {
+    background-position: center center;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -43,52 +48,106 @@
     transform: translate(-50%,-50%);
     height: 100%;
     width: 100%;
-    padding: 70px 55px 0 55px;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 15px;
+    padding: rem(70px) rem(55px) 0 rem(55px);
+    color: $main;
+    font-size: rem(14px);
+    margin-bottom: rem(15px);
     opacity: 0;
     transition: opacity 0.3s;
     background-color: rgba(0, 0, 0, 0.6);
+    transition: .3s;
     
     &:hover {
         opacity: 1;
         
     }
+
+    @include tablets {
+        text-align: center;
+        padding-top: rem(30px)
+    }
+
+    @include phones-small {
+        padding: rem(40px) 0 0 0;
+    }
 }
 
 .users__name {
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: rem(20px);
+    font-size: rem(14px);
     font-family: 'gagalinregular';
-    color: #fff;
+    color: $main;
+
+    @include tablets {
+        font-size: rem(15px);
+    }
+
+    @include phones {
+        font-size: rem(25px);
+        margin-bottom: rem(30px);
+    }
 }
 
 .users__text {
-    line-height: 30px;
-    color: #fff;
-    margin-bottom: 20px;
+    line-height: rem(24px);
+    color: $main;
+    margin-bottom: rem(20px);
     display: block;
     font-family: 'ubuntu';
     font-weight: lighter;
+
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .users__btn {
     display: block;
-    width: 109px;
-    height: 34px;
-    background-color: #2f3234;
-    border: 1px solid transparent;
-    border-radius: 3px;
+    width: rem(109px);
+    height: rem(34px);
+    background-color: $black;
+    border: rem(1px) solid transparent;
+    border-radius: rem(3px);
     &:hover {
         background-color: #1f2122;
         transition: background-color 0.2s;
         cursor: pointer;
     }
+
+    @include tablets {
+        display: inline-block;
+    }
+
+    @include phones {
+        display: none;
+    }
+
+
 }
 
 .users__link {
-    color: #fff;
-    font-size: 13px;
+    color: $main;
+    font-size: rem(13px);
     text-transform: uppercase;
+
+}
+
+.users__btn--mobile {
+    @extend .users__btn;
+    display: none;
+    width: rem(120px);
+    height: rem(40px);
+    border-radius: rem(5px);
+    
+    @include phones {
+        display: inline-block;
+    }
+}
+
+.users__link--mobile {
+    @extend .users__link;
 }

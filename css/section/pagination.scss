@@ -1,10 +1,10 @@
 .pagination {
-    width: 16px;
+    width: rem(16px);
     display: flex;
     align-items: flex-end;
     position: fixed;
-    top: 90px;
-    right: 46px;
+    top: rem(90px);
+    right: rem(46px);
 
 }
 
@@ -16,10 +16,10 @@
 }
 
 .pagination__item {
-    margin-bottom: 10px;
-    width: 16px;
-    height: 16px;
-    border: 1px solid transparent;
+    margin-bottom: rem(10px);
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -32,12 +32,12 @@
 }
 
 .pagination__item--active {
-    border: 1px solid #f9fafa;
+    border: rem(1px) solid #f9fafa;
 }
 
 .pagination__link {
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     background-color: #fff;
     border-radius: 50%;
     display: block;

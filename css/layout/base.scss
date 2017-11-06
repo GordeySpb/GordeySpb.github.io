@@ -1,14 +1,14 @@
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: rem(0px);
+    margin: rem(0px);
     box-sizing: border-box;    
 }
 
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: rem(0px);
+    padding: rem(0px);
 }
 
 ul li {
@@ -16,8 +16,8 @@ ul li {
 }
 
 p{
-    margin: 0px;
-    padding: 0px;
+    margin: rem(0px);
+    padding: rem(0px);
 }
 
 a {
@@ -26,40 +26,63 @@ a {
 
 html {
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    font-size: 16px;
+
+    @include tablets {
+        font-size: 15px;
+    }
+    
+    @include phones {
+        font-size: 14px;
+    }
+    
+    @include phones-small {
+        font-size: 13px;
+    } 
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: $main;
     font-family: 'Ubuntu', 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: -58px;
+    margin-bottom: rem(-58px);
     &:after {
         content: '';
         display: block;
-        height: 58px;
+        height: rem(58px);
     }
 }
 section {
     height: 100vh;
-    width: 100vw;
-    min-height: 650px;
-    min-width: 1100px;
+    width: 100%;
+    min-height: rem(650px);
+    min-width: rem(320px);
     display: flex;
 }
 
+.container {
+    max-width: 940px;
+    margin: 0  auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .section__title {
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: 'gagalinregular';
     font-weight: normal;
 }

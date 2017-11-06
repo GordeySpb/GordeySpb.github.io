@@ -1,4 +1,43 @@
+//vars
+
+@import "layout/vars.scss";
+
+//resolution
+
+$tablets: 768px;
+$phones: 480px;
+$phones-small: 320px;
+
+//media
+
+@import "layout/media.scss";
+
+
+
+//mixin
+
+@import "layout/mixin.scss";
+
+
+
+
+
+
+
+//base
+
 @import "layout/base.scss";
+
+
+
+//section
+
 @import "section/greeting.scss";
 @import "section/best.scss";
 @import "section/reviews.scss";
+@import "section/pagination.scss";
+@import "section/team.scss";
+@import "section/map.scss";
+@import "section/footer.scss";
+@import "section/menu.scss";
+@import "section/order.scss";

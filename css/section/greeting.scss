@@ -11,40 +11,39 @@
     
 
 }
+
+.main-content {
+    flex: 1;
+}
+
 .header {
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0.75rem;
+  justify-content: space-between;
 }
 
 
-.container {
-    width: 940px;
-    margin: 0  auto;
-}
 
-.header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-}
+ 
 
-.header__link {
-    margin-right: 0 auto;
-}
 
-.header__pic {
 
-}
 
 .logo__text {
     position: absolute;
     top: 0;
-    left: -9999px;
+    left: rem(-9999px);
 }
 
 .header-nav {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: rem(20px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu-list {
@@ -56,11 +55,11 @@
 }
 
 .menu__item {
-    margin-left: 15px;
+    margin-left: rem(15px);
     &:after {
         content: '•';
-        color: #fff;
-        margin-left: 10px;
+        color: $main;
+        margin-left: rem(10px);
     }
     &:last-child:after {
         display: none;
@@ -70,23 +69,28 @@
 
 
 .menu__link {
-    color: #fff;
-    font-size: 13px;
+    color: $main;
+    font-size: rem(13px);
     text-transform: uppercase;
     font-weight: medium;
     font-family: 'ubuntu';
     
 }
 
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
 .header-btn {
-    margin-left: 10px;
+    margin-left: rem(10px);
     outline: none;
     border: transparent;
     background-color: #e45028;
-    border-radius: 3px;
+    border-radius: rem(3px);
     display:inline-block;
-    width: 98px;
-    height: 35px;
+    width: rem(98px);
+    height: rem(35px);
     cursor: pointer;
     transition: background-color 0.3s;
     &:hover {
@@ -97,8 +101,45 @@
 
 .header-btn__link{
     color: #fff;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
+}
+
+.hamburger-menu {
+    height: rem(22px);
+    margin-left: rem(30px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.hamburger-menu__item {
+    width: rem(24px);
+    height: rem(4px);
+    background-color: $main;
+    display: inline-block;
+    border-radius: rem(3px);
+
+    &:before {
+        content: '';
+        top: 0;
+        position: absolute;
+        @extend .hamburger-menu__item
+    }
+
+    &:after {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        @extend .hamburger-menu__item
+    }
+
+    
 }
 
 
@@ -107,46 +148,89 @@
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
+
+    @include tablets {
+        
+        
+    }
 }
 
 
 
 .burger {
     display: flex;
-    margin-bottom: 100px;
     
+    @include tablets {
+     flex-direction: column;
+     padding: 0 rem(100px);
+    }
+
+    @include phones-small {
+        padding: 0;
+    }
+}
+
+.burger-pic {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.burger__img {
+    max-width: 100%;
 }
 
 .burger-desk {
-    margin-left: 15px;
-    padding-top: 70px;
+    margin-left: rem(15px);
+    padding-top: rem(70px);
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
 }
 
 .section__title--yellow {
-    color: #f9b43b;
-    margin-bottom: 30px;
+    color: $orange;
+    margin-bottom: rem(30px);
+
+    @include phones {
+        font-size: rem(49px);
+        margin-bottom: rem(10px);
+    }
 }
 
 
 .burger__text {
     font-family: 'lifehack';
-    font-size: 65px;
-    color: #fff;
+    font-size: rem(65px);
+    color: $main;
     font-weight: medium;
-    line-height: 60px;
+    line-height: rem(60px);
     
+    @include phones {
+        font-size: rem(50px);
+    } 
 }
 
 
 
 .greeting-icon {
-
-    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    margin-bottom: rem(20px);
+    justify-content: center;
 }
 
-.arrow__img {
-    align-items: center;
-    
+.arrow-scrolll__svg {
+    width: rem(33px);
+    height: rem(33px);
+    fill: $main;
 }
 
