@@ -6,6 +6,18 @@
     top: rem(90px);
     right: rem(46px);
 
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+
+    }
+
+    @include phones-small {
+        display: none;
+    }
 }
 
 .pagination__list {

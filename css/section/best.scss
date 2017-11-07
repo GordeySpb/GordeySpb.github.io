@@ -12,6 +12,15 @@
    display: flex;
    justify-content: center;
    margin-bottom: rem(88px);
+
+}
+
+.section__title--black {
+
+    @include phones-small {
+        font-size: rem(45px);
+        margin-bottom: 0;
+    }
 }
 
 .best__text {
@@ -40,6 +49,10 @@
     @include phones {
         flex-direction: row;
         margin-bottom: rem(70px);
+    }
+
+    @include phones-small {
+        margin-bottom: rem(15px);
     }
 
 

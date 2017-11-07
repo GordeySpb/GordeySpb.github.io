@@ -70,6 +70,19 @@ footer {
     display: inline-block;
     margin-left: rem(20px);
     padding-top: rem(18px);
+
+    
+    @include phones {
+        &:nth-child(1) {
+            margin-left: 0px;
+        }
+    }
+
+    @include phones-small {
+        &:nth-child(1) {
+            margin-left: 0px;
+        }
+    }
 }
 
 .socila__link {

@@ -166,6 +166,10 @@
      padding: 0 rem(100px);
     }
 
+    @include phones {
+        padding: 0;
+    }
+
     @include phones-small {
         padding: 0;
     }
@@ -182,6 +186,10 @@
 
 .burger__img {
     max-width: 100%;
+
+    @include phones-small {
+        width: 60%;
+    }
 }
 
 .burger-desk {

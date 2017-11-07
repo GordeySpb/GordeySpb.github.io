@@ -9,6 +9,10 @@
     color: $main;
     padding-top: rem(111px);
     padding-left: rem(93px);
+
+    @include tablets {
+        padding-left: rem(30px);
+    }
     
     @include phones-small {
         font-size: rem(45px);
@@ -77,7 +81,6 @@
 .menu-burger__desc p {
     color: $main;
     font-size: rem(14px);
-    width: rem(540px);
     padding-top: rem(60px);
     padding-left: rem(33px);
     line-height: rem(24px);
