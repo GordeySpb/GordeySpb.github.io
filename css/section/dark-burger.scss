@@ -1,0 +1,262 @@
+.dark-burger {
+    background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
+}
+
+.burgers-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.burgesrs__wrap {
+    // position: relative;
+    // width: 100%;   
+}
+
+.burgers__controls {
+
+
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(30px);
+    z-index: 20;
+}
+
+
+
+.slider__btn--prev {
+    left: rem(-20px);
+    transform: rotate(90deg);
+}
+
+.slider__btn--next {
+    right: rem(-20px);
+    transform: rotate(-90deg);
+}
+
+.slider__arrow {
+    width: rem(30px);
+    height: rem(30px);
+    fill: $main;
+}
+
+.slider__item {
+    
+}
+
+.ingredients {
+    position: absolute;
+    background: rgba(227, 80, 40, 0.4);
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: rem(250px);
+
+    @include phones {
+        top: rem(15px);
+    }
+    
+}
+
+.ingredients__icon {
+     width: 60%;
+     padding: 0;
+}
+
+.ingredients__text {
+    color: $main;
+    font-size: rem(14px);
+    font-family: 'gagalinregular';
+    text-transform: uppercase;
+    
+}
+
+.burgers-caloricity {
+    position: absolute;
+    bottom: rem(250px);
+    text-align: center;
+    color: $main;
+    font-family: 'gagalinregular';
+    opacity: 0.5;
+
+    @include phones {
+        top: rem(30px);
+        left: 80%;
+    }
+}
+
+.burgers-caloricity__img {
+    background: url('/img/icons/kkal.svg') no-repeat 50%;
+    width: rem(60px);
+    height: rem(60px);
+    position: relative;
+    background-size: contain;
+
+}
+
+.burgers-caloricity__desc {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: rem(20px);
+    
+}
+
+.burgers-caloricity__tetx {
+    font-size: rem(14px);
+    text-transform: uppercase;
+}
+
+.composition__lis {
+    width: rem(270px);
+    background: rgba(255,255,255,.9);
+    border-radius: 6px;
+    position: absolute;
+    top: rem(250px);
+    left: rem(90px);
+    
+}
+
+.composition__lis--isactive {
+    display: none;
+}
+
+.composition__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: rem(14px);
+    font-weight: medium;
+}
+
+.composition__icon {
+    width: rem(50px);
+    height: rem(50px);
+}
+
+
+
+.composition__name {
+    width: 50%;
+}
+
+.composition__amount {
+    padding-right: 20px;
+}
+
+
+
+.burgers__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.burgers__left, .burgers__right {
+    width: 50%;
+
+    @include phones {
+        width: 100%;
+        text-align: center
+    }
+}
+
+.burgers-dark__pic {
+    max-width: 100%;
+    
+    @include phones {
+        width: 70%;
+    }
+}
+
+.dark__title {
+    padding: 0;
+    line-height: rem(64px);
+    margin-bottom: rem(45px);
+
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: rem(60px);
+        margin-bottom: rem(20px);
+    }
+
+
+}
+
+.burgers-text {
+    color: $main;
+    line-height: rem(24px);
+    font-weight: lighter;
+    margin-bottom: rem(5px);
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.burgers__price p {
+    color: #e35028;
+    font-size: rem(72px);
+    font-family: 'gagalinregular';
+}
+
+.burgers__text p {
+    font-size: rem(30px);
+    font-family: 'gagalinregular';
+    color: #e35028;
+    padding-top: 20px;
+
+    @include phones {
+        // font-size: rem(15px);
+    }
+}
+
+.burgers__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    @include phones {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.dark-btn {
+    border: transparent;
+    background-color: #e45028;
+    border-radius: rem(3px);
+    display:inline-block;
+    width: rem(98px);
+    height: rem(35px);
+    margin-left: rem(30px);
+    margin-top: rem(15px);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+.dark-btn__link {
+    color: $main;
+    text-transform: uppercase;
+}

@@ -106,9 +106,13 @@
 }
 
 .hamburger-menu {
+
+}
+
+.hamburger-menu___link {
+    position: relative;
     height: rem(22px);
     margin-left: rem(30px);
-    position: relative;
     display: flex;
     align-items: center;
     display: none;
