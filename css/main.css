@@ -43,6 +43,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.locked {
+  overflow: hidden; }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -1283,6 +1286,24 @@ footer {
   flex-direction: row;
   position: relative; }
 
+.burgesrs__wrap {
+  position: relative;
+  height: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 375px) {
+    .burgesrs__wrap {
+      height: 100%; } }
+  @media screen and (max-width: 480px) {
+    .burgesrs__wrap {
+      height: 100%; } }
+
 .slider__btn {
   position: absolute;
   top: 50%;
@@ -1332,7 +1353,7 @@ footer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  top: 15.625rem; }
+  top: 0.625rem; }
   @media screen and (max-width: 480px) {
     .ingredients {
       top: 0.9375rem; } }
@@ -1349,7 +1370,8 @@ footer {
 
 .burgers-caloricity {
   position: absolute;
-  bottom: 15.625rem;
+  bottom: 0;
+  left: 0;
   text-align: center;
   color: #fff;
   font-family: 'gagalinregular';
@@ -1384,8 +1406,8 @@ footer {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 6px;
   position: absolute;
-  top: 15.625rem;
-  left: 5.625rem; }
+  top: 0;
+  left: 100%; }
 
 .composition__lis--isactive {
   display: none; }

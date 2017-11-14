@@ -53,6 +53,10 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.locked {
+    overflow: hidden;
+}
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
