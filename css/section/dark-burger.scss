@@ -12,9 +12,11 @@
 
 .burgesrs__wrap {
     position: relative;
-    height: 60%;
+		height: 70%;
+		width: 100%;
     display: flex;
     align-items: center;
+
 
     @include phones-small {
         height: 100%;
@@ -57,8 +59,28 @@
     fill: $main;
 }
 
+.slider{
+    overflow: hidden;
+    position: relative;
+    width: rem(940px);
+    height: 100%;
+
+}
+
+.slider__list {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
 .slider__item {
-    
+    width: rem(940px);
+    flex-shrink: 0;
+
 }
 
 .ingredients {
@@ -72,6 +94,12 @@
     align-items: center;
     justify-content: center;
     top: rem(10px);
+    
+
+    &:hover{
+        background-color: $accent;
+
+    }
 
     @include phones {
         top: rem(15px);
@@ -132,7 +160,16 @@
     text-transform: uppercase;
 }
 
-.composition__lis {
+
+.burgers-composition {
+    display: none;
+}
+
+.burgers-composition--active {
+    display: flex;
+}
+
+.composition__list {
     width: rem(270px);
     background: rgba(255,255,255,.9);
     border-radius: 6px;
@@ -142,9 +179,7 @@
     
 }
 
-.composition__lis--isactive {
-    display: none;
-}
+
 
 .composition__item {
     display: flex;

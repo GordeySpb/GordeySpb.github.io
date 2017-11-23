@@ -8,13 +8,19 @@
     opacity: 0.99;
     justify-content: center;
     align-items: center;
-    display: none;
+    height: 0;
+    overflow: hidden;
+
+    
 }
 
 .isactive {
     display: flex;
-}
+    height: 100%;
+    transition: height .3s;
+    
 
+}
 
 .fullscreen__list {
     display: flex;
@@ -98,8 +104,6 @@
         display: block;
         position: absolute;
         top: 50%;
-        
-        
     }
 }
 
