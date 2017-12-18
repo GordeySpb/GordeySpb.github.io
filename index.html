@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-                                                   <!--GREETING  -->
+                                          <!--GREETING  -->
 
             <section class="section section-greeting section--active" style="background-image:url('/img/video-bg.jpg')">
                 <div class="container main-content">
@@ -703,66 +703,66 @@
                     <div class="menu-content">
                         <div class="section__title section__title--yellow">Закажите доставку</div>
                         <div class="form">
-                            <form action="" class="form__elem">
+                            <form action="server.php" class="form__elem" method="post" id="order-form">
                                 <div class="form__col-left">
                                     <div class="form__row">
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-name">
                                             <div class="form__block-title">Имя</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-name" name="user-name">
                                         </label>
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-tell">
                                             <div class="form__block-title">Телефон</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-tell" name="user-tell">
                                         </label>
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-street">
                                             <div class="form__block-title">Улица</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-street" name="user-street">
                                         </label>
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-house">
                                             <div class="form__block-title">Дом</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-house" name="user-house">
                                         </label>
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-housing">
                                             <div class="form__block-title">Корпус</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-housing" name="user-housing">
                                         </label>
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-flat">
                                             <div class="form__block-title">Квартира</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-flat" name="user-flat">
                                         </label>
-                                        <label class="form__block">
+                                        <label class="form__block" for="user-floor">
                                             <div class="form__block-title">Этаж</div>
-                                            <input type="text" class="form__imput">
+                                            <input type="text" class="form__imput" id="user-floor" name="user-floor">
                                         </label> 
                                     </div>
                                 </div>
                                 <div class="form__col-right">
                                     <div class="form__row">
-                                        <label class="form__block">
+                                        <label class="form__block" for="pay-card">
                                             <div class="form__block-title">Комментарий</div>
-                                            <textarea name="" id=""class="form__big-text-imput" ></textarea>
+                                            <textarea  class="form__big-text-imput" name="message" id="message"></textarea>
                                         </label>
                                     </div>
                                     <div class="form__buttons">
                                         <div class="form__row">
                                             <label class="form__block form__block--controls">
-                                                <input type="radio" class="form__block-elem" name="menu">
+                                                <input type="radio" class="form__block-elem" name="pay-option" id="pay-cash" value="наличными">
                                                 <div class="form__block-fake"></div>
                                                 <div class="form__block-text">Потребуеься сдача</div>
                                             </label>
                                             <label class="form__block form__block--controls">
-                                                <input type="radio" class="form__block-elem" name="menu" checked>
+                                                <input type="radio" class="form__block-elem" id="pay-card" value="картой" name="pay-option" checked >
                                                 <div class="form__block-fake"></div>
                                                 <div class="form__block-text">Оплатить по карте</div>
                                             </label>
                                         </div>
                                         <div class="form__row">
-                                            <label class="form__block--controls">
-                                                <input type="checkbox" name="" id="" class="form-check">
+                                            <label class="form__block--controls" for="dont-disturb">
+                                                <input type="checkbox" id="dont-disturb" name="dont-disturb" value="1" class="form-check">
                                                 <div class="form__check-fake"></div>
                                                 <div class="form__block-text">Не перезванивать</div>
                                             </label>
@@ -847,6 +847,11 @@
             </div>
         </div>
     </div>
+
+    <div class="popup-order">
+        <div class="popup-order--success" id="success"></div>
+        <div class="popup-order--error" id="error"></div>
+    </div>
     
 
                                           <!--fullscreen MENU  -->
@@ -855,7 +860,7 @@
         <a href="#" class="close__link">
             <div class="close-menu">
                 <div class="close-icon"></div>
-        </div>
+            </div>
         </a>
         <ul class="fullscreen__list">
             <li class="fullscreen__item">

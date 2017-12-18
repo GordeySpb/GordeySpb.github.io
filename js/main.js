@@ -415,9 +415,79 @@ $(document).ready(() => {
 
         myMap.behaviors
             .disable('scrollZoom')
-    }
+	}
+
 
 });
+
+	
+	//Форма
+
+let ajaxForm = function (form) { // Универсальная функция формы
+	
+	let url = form.attr('action'),
+		data = form.serialize();
+
+	return $.ajax({
+		type: 'POST',
+		url: url,
+		data: data,
+		dataType: 'JSON'
+	});
+
+}
+
+let submitForm = function(e) {
+
+	e.preventDefault();
+
+	
+	let form = $(e.target);
+	let request = ajaxForm(form);
+	
+
+	request.done(function(msg) {
+
+		const popupOrder = msg.status ? '#success' : '#error';
+		$status = $(popupOrder);
+		$status.html(msg.mes)
+
+		$.fancybox.open( 
+			$status
+			, {
+				type: 'inline',
+				maxWidth: 250,
+				fitToView: false,
+				padding: 0,
+				afterClose() {
+				form.trigger('reset');
+				}
+			});
+			});
+		
+			request.fail(function(jqXHR, textStatus) {
+			$.fancybox.open( 
+				$('#error').html("На сервере произошла ошибка: " + textStatus)
+			, {
+				type: 'inline',
+				maxWidth: 250,
+				fitToView: false,
+				padding: 0,
+				afterClose() {
+					form.trigger('reset');
+				}
+				});
+			});
+		
+	};
+
+
+
+
+
+
+
+$('#order-form').on('submit',submitForm)
 
 
 

@@ -109,42 +109,43 @@
 
 }
 
-.hamburger-menu___link {
-    position: relative;
-    height: rem(22px);
-    margin-left: rem(30px);
-    display: flex;
-    align-items: center;
-    display: none;
+// .hamburger-menu___link {
+//     position: relative;
+//     height: rem(22px);
+//     margin-left: rem(30px);
+//     display: flex;
+//     align-items: center;
+//     display: none;
 
-    @include tablets {
-        display: flex;
-    }
-}
+//     @include tablets {
+//         display: flex;
+//     }
+// }
 
-.hamburger-menu__item {
-    width: rem(24px);
-    height: rem(4px);
-    background-color: $main;
-    display: inline-block;
-    border-radius: rem(3px);
+// .hamburger-menu__item {
+//     width: rem(24px);
+//     height: rem(4px);
+//     background-color: $main;
+//     display: inline-block;
+//     border-radius: rem(3px);
 
-    &:before {
-        content: '';
-        top: 0;
-        position: absolute;
-        @extend .hamburger-menu__item
-    }
+//     &:before {
+//         content: '';
+//         top: 0;
+//         position: absolute;
+//         @extend .hamburger-menu__item
+//     }
 
-    &:after {
-        content: '';
-        bottom: 0;
-        position: absolute;
-        @extend .hamburger-menu__item
-    }
+//     &:after {
+//         content: '';
+//         bottom: 0;
+//         position: absolute;
+//         @extend .hamburger-menu__item
+//     }
 
     
-}
+// }
+
 
 
 .greeting-desk {
